@@ -1,0 +1,19 @@
+<suite name = "Automation tests"
+       parallel = "tests"
+       thread-count = "2"
+       verbose = "2">
+       
+       <listeners>
+           <listener class-name = "listeners.TestListener"/>
+       </listeners>
+       
+       <test name = "chromeTest">
+       <parameter name = "browser" value = "chrome"/>
+           <classes>
+               <class name = "tests.addRemoveFeature.AddRemoveTests"/>
+               <class
+               	name="tests.checkBoxFeature.CheckBoxTests">
+</class>
+           </classes>
+       </test>
+</suite>
